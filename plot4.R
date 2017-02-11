@@ -24,7 +24,8 @@ png(filename="plot4.png",
 
 par(mfrow = c(2,2))
 
-with(x, plot(Global_active_power ~ datetime, type="l", xlab = ""))
+with(x, plot(Global_active_power ~ datetime, type="l",
+             xlab = "", ylab = "Global Active Power"))
 
 with(x, plot(Voltage ~ datetime, type="l"))
 

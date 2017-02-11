@@ -23,7 +23,8 @@ png(filename="plot2.png",
     width = 480, height = 480, units = "px")
 par(mfrow = c(1,1))
 
-with(x, plot(Global_active_power ~ datetime, type="l"))
+with(x, plot(Global_active_power ~ datetime, type="l",
+     ylab = "Global Active Power (kilwatts)"))
 
 dev.off()
 
