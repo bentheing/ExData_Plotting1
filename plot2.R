@@ -24,6 +24,7 @@ png(filename="plot2.png",
 par(mfrow = c(1,1))
 
 with(x, plot(Global_active_power ~ datetime, type="l",
+     xlab = "",
      ylab = "Global Active Power (kilwatts)"))
 
 dev.off()
